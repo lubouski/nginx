@@ -131,3 +131,32 @@
 2017/10/05 17:06:56 [emerg] 16234#0: invalid number of arguments in "include" directive in /home/aliaksandr_lubouski/nginx/conf/nginx.conf:31
 2017/10/05 17:07:24 [emerg] 16266#0: unknown directive "Server" in /home/aliaksandr_lubouski/nginx/conf/vhosts/backend.conf:1
 2017/10/05 17:11:48 [error] 16439#0: *1 open() "/home/aliaksandr_lubouski/nginx/html/hwhwt" failed (2: No such file or directory), client: 192.168.122.203, server: 192.168.122.203, request: "GET /hwhwt HTTP/1.1", host: "192.168.122.203:8080"
+2017/10/06 11:36:14 [notice] 1920#0: signal process started
+2017/10/06 12:17:13 [error] 2177#0: *1 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.203, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236:8080"
+2017/10/06 13:00:35 [error] 2177#0: *2 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.236, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236:8080"
+2017/10/06 13:17:52 [error] 2958#0: *1 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.236, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236:8080"
+2017/10/06 13:23:40 [error] 2958#0: *2 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.203, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236"
+2017/10/06 13:23:40 [error] 2958#0: *2 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.203, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236"
+2017/10/06 13:25:10 [error] 2958#0: *3 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.178, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236"
+2017/10/06 13:45:07 [emerg] 4079#0: BIO_new_file("/home/aliaksandr_lubouski/nginx/server.crti") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/home/aliaksandr_lubouski/nginx/server.crti','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2017/10/06 13:51:18 [error] 4169#0: *4 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.203, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236:443"
+2017/10/06 13:51:18 [error] 4169#0: *4 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.203, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236:443"
+2017/10/06 13:51:47 [error] 4169#0: *5 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.203, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236"
+2017/10/06 13:54:06 [error] 4292#0: *2 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.203, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236"
+2017/10/06 13:54:06 [error] 4292#0: *2 open() "/home/aliaksandr_lubouski/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.122.203, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", host: "192.168.122.236"
+2017/10/06 14:12:19 [emerg] 4595#0: host not found in upstream "node1.192.168.122.203:8080" in /home/aliaksandr_lubouski/nginx/conf/vhosts/backend.conf:2
+2017/10/06 14:14:37 [emerg] 4649#0: host not found in upstream "node1.192.168.122.203:8080" in /home/aliaksandr_lubouski/nginx/conf/vhosts/backend.conf:2
+2017/10/06 14:17:26 [emerg] 4733#0: "upstream" directive is not allowed here in /home/aliaksandr_lubouski/nginx/conf/nginx.conf:11
+2017/10/06 14:18:44 [emerg] 4761#0: "upstream" directive is not allowed here in /home/aliaksandr_lubouski/nginx/conf/nginx.conf:11
+2017/10/06 14:19:26 [emerg] 4793#0: "upstream" directive is not allowed here in /home/aliaksandr_lubouski/nginx/conf/nginx.conf:11
+2017/10/06 14:20:24 [emerg] 4835#0: "upstream" directive is not allowed here in /home/aliaksandr_lubouski/nginx/conf/nginx.conf:11
+2017/10/06 14:21:29 [emerg] 4867#0: host not found in upstream "node1.192.168.122.203:8080" in /home/aliaksandr_lubouski/nginx/conf/nginx.conf:36
+2017/10/06 14:50:21 [error] 5255#0: *1 no "ssl_certificate" is defined in server listening on SSL port while SSL handshaking, client: 192.168.122.1, server: 0.0.0.0:8443
+2017/10/06 14:51:16 [error] 5255#0: *2 connect() failed (113: No route to host) while connecting to upstream, client: 192.168.122.1, server: 192.168.122.236, request: "GET /favicon.ico HTTP/1.1", upstream: "http://192.168.122.178:8080/favicon.ico", host: "192.168.122.236"
+2017/10/06 14:52:47 [error] 5255#0: *12 connect() failed (113: No route to host) while connecting to upstream, client: 192.168.122.1, server: 192.168.122.236, request: "GET / HTTP/1.1", upstream: "http://192.168.122.178:8080/", host: "192.168.122.236"
+2017/10/06 14:54:07 [error] 5255#0: *28 connect() failed (113: No route to host) while connecting to upstream, client: 192.168.122.1, server: 192.168.122.236, request: "GET / HTTP/1.1", upstream: "http://192.168.122.178:8080/", host: "192.168.122.236"
+2017/10/06 14:55:24 [error] 5352#0: *1 connect() failed (113: No route to host) while connecting to upstream, client: 192.168.122.1, server: 192.168.122.236, request: "GET /bodyback.png HTTP/1.1", upstream: "http://192.168.122.178:8080/bodyback.png", host: "192.168.122.236", referrer: "http://192.168.122.236/"
+2017/10/06 15:08:09 [emerg] 5717#0: directive "proxy_redirect" is not terminated by ";" in /home/aliaksandr_lubouski/nginx/conf/vhosts/backend.conf:27
+2017/10/06 15:26:34 [emerg] 6032#0: unexpected "{" in /home/aliaksandr_lubouski/nginx/conf/vhosts/backend.conf:5
+2017/10/06 15:33:56 [emerg] 6253#0: duplicate location "/status" in /home/aliaksandr_lubouski/nginx/conf/vhosts/backend.conf:39
+2017/10/06 15:35:01 [error] 6289#0: *2 access forbidden by rule, client: 192.168.122.1, server: 192.168.122.236, request: "GET /status HTTP/1.1", host: "192.168.122.236"
